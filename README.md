@@ -6,3 +6,7 @@ Estou empregando Django 3.0.4 + MySQL 8. Para o projeto no Github preferi manter
 
 
 Microlearn project with Django &amp; Vue JS (JavaScript)
+
+
+Usuário: gabriel
+Senha: lajg32d559862
