@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -30,7 +30,10 @@
             border: none;
         }
         body { 
-            background-color: #f8f8f8;
+            background-color: #e4e4ef;
+        }
+        .bg-dark { 
+          background-color: #201e45 !important;
         }
         .card { 
             border: none !important;
@@ -80,33 +83,40 @@
         </div>
       </nav>
 
+      <div class="row">
+        <div class="col-md-3">
+          <h1> Lectures </h1>
+        </div>
 
-      <section class="container">
-          <div class="row">
-              <div class="col-md-12 mt-5 mb-5">
-                  <h1> Aulas </h1>
-                  <p> This is a entrypoint
-                      for bored people.
-                  </p>
-              </div>
-          </div>
-      </section>
+        <div class="col-md-6">
+          <h1> Content </h1>
+
+          <section class="container">
+            <div class="row">
+                {% for post in posts %}
+                <div class="col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5> {{ post.title }} </h5>
+                            <p> {{ post.text }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
 
 
-      <section class="container">
-          <div class="row">
-              {% for post in posts %}
-              <div class="col-md-12 mb-4">
-                  <div class="card">
-                      <div class="card-body">
-                          <h5> {{ post.title }} </h5>
-                          <p> {{ post.text }}</p>
-                      </div>
-                  </div>
-              </div>
-              {% endfor %}
-          </div>
-      </section>
+        </div>
+
+        <div class="col-md-3">
+
+          <h1> Markdown </h1>
+
+        </div>
+      </div>
+
+      
 
       
 
