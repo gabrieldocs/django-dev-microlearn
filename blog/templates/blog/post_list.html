@@ -1,9 +1,71 @@
 {% extends 'blog/base.html' %}
 
+
 {% block content %}
 
-  <section class="container">
-    <h1> This is a main</h1>
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mt-5">
+        <h1> Microlearn Kit</h1>
+        <h5 class = "mb-3 text-secondary"> 
+          Microlearnkit API allows you to develop and
+          deploy a rich learning experience on a minimal 
+          LMS built on top of Django + MySQL Stack, with bare
+          bones.  
+        </h5>
+
+        <a href="admin/" class="btn btn-success btn-lg btn-block mt-5 mb-5"> Ir para o dashboard </a>
+
+        <p class = "mt-5 mb-5">  
+          Microlearnkit + AI developed by Gabriel Santos
+          under MIT License. Please read the guides at <b>GitHub</b> or <b>GitLab</b>
+          about the installation und get started.
+        </p>
+      </div>
+
+      <div class="col-md-6 mt-5" align = "center">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+            src="https://assets8.lottiefiles.com/packages/lf20_qFttfS.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay >
+        </lottie-player>
+        <small> Animação por Lottie/AirBnB</small>
+      </div>
+    </div>
   </section>
   
+
+  <div class="jumbotron">
+    <div class="container ">
+        
+      <div class="row ">
+
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3> #1 About Physics...</h3>
+              <hr>
+              <p> 
+                Sir Isac Newton (1642 - ???)
+                Lorem ipsum dolor sit amnet sectur dolor
+                Lorem ipsum dolor sit amnet sectur dolor
+                Lorem ipsum dolor sit amnet sectur dolor?
+              </p>
+              <hr>
+              <div class="row p-5 d-flex justify-content-between">
+                <a href="" class="btn btn-lg btn-success"> Calculum  </a>
+                <a href="" class="btn btn-lg btn-success"> Computer  </a>
+                <a href="" class="btn btn-lg btn-success"> Boats or Ducks  </a>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+        
+      </div>
+      <div class="mt-5 mb-5 pre bg-success"></div>
+
+    </div>
+  </div>
 {% endblock %}
